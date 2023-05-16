@@ -2,6 +2,7 @@ import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers';
 import { expect } from 'chai';
 import { Contract } from 'ethers';
 import { ethers } from 'hardhat';
+import { utils } from 'ethers';
 
 describe('DeployAContract', () => {
   let deployer: SignerWithAddress;
@@ -29,7 +30,9 @@ describe('DeployAContract', () => {
     /**
      * YOUR CODE HERE
      * */
-    await target.setNickname(0x6e697365646f);
+    // await target.CaptureTheEther(attacker);
+    const inBytes = utils.formatBytes32String("nisedo");
+    await captureTheEther.setNickname(inBytes);
 
     expect(await target.isComplete()).to.equal(true);
   });

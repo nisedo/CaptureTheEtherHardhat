@@ -1,3 +1,5 @@
+// https://capturetheether.com/challenges/warmup/nickname/
+
 pragma solidity ^0.4.21;
 
 // Relevant part of the CaptureTheEther contract.
