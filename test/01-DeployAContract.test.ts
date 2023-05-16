@@ -13,9 +13,9 @@ describe('DeployAContract', () => {
   });
 
   it('exploit', async () => {
-    /**
-     * YOUR CODE HERE
-     * */
+
+    const DeployChallenge = await ethers.getContractFactory("DeployChallenge");
+    const target = await DeployChallenge.deploy();
 
     expect(await target.isComplete()).to.equal(true);
   });
