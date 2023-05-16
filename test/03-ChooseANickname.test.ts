@@ -29,6 +29,7 @@ describe('DeployAContract', () => {
     /**
      * YOUR CODE HERE
      * */
+    await target.setNickname(0x6e697365646f);
 
     expect(await target.isComplete()).to.equal(true);
   });
