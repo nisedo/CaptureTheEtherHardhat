@@ -9,8 +9,8 @@ Challenges from [Capture the ether](https://capturetheether.com/) on hardhat.
 
 ## Challenges
 
-1. [Deploy a contract](#deploy-a-contract)
-2. [Call me](#call-me)
+1. [Deploy a contract ✅](#deploy-a-contract)
+2. [Call me ✅](#call-me)
 3. [Choose a nickname](#choose-a-nickname)
 4. [Guess the number](#guess-the-number)
 5. [Guess the secret number](#guess-the-secret-number)
@@ -29,6 +29,9 @@ Challenges from [Capture the ether](https://capturetheether.com/) on hardhat.
 18. [Account Takeover](#account-takeover)
 19. [Assume ownership](#assume-ownership)
 20. [Token bank](#token-bank)
+
+_✅: Challenge solved in the test folder_
+
 ## Warmup
 
 The warmup challenges are intended to get you familiar with the way Capture the Ether works and the tools you need to use.
