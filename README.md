@@ -11,9 +11,9 @@ Challenges from [Capture the ether](https://capturetheether.com/) on hardhat.
 
 1. [Deploy a contract ✅](#deploy-a-contract)
 2. [Call me ✅](#call-me)
-3. [Choose a nickname](#choose-a-nickname)
-4. [Guess the number](#guess-the-number)
-5. [Guess the secret number](#guess-the-secret-number)
+3. [Choose a nickname ✅](#choose-a-nickname)
+4. [Guess the number ✅](#guess-the-number)
+5. [Guess the secret number ✅](#guess-the-secret-number)
 6. [Guess the random number](#guess-the-random-number)
 7. [Guess the new number](#guess-the-new-number)
 8. [Predict the future](#predict-the-future)

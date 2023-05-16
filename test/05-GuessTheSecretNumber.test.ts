@@ -27,6 +27,23 @@ describe('GuessTheSecretNumberChallenge', () => {
     /**
      * YOUR CODE HERE
      * */
+    
+    // Call the guess function with the number 170 and send 1 ether
+    
+    let answerHash = "0xdb81b4d58595fbbbb592d3661a34cdca14d7ab379441400cbfa1b78bc447c365";
+
+    function testNumbers() {
+      for (let i = 0; i <= 256; i++) {
+        let tempHash = ethers.utils.keccak256(ethers.utils.arrayify(i));
+        if (tempHash === answerHash) {
+          console.log(`Found match: ${i}`);
+          return i;
+        }
+      }
+    }
+    
+    let hash = testNumbers();
+    await target.guess(hash, { value: utils.parseEther('1') });
 
     expect(await target.isComplete()).to.equal(true);
   });

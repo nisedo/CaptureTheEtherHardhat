@@ -28,6 +28,9 @@ describe('GuessTheRandomNumberChallenge', () => {
      * YOUR CODE HERE
      * */
 
+    const answer = await target.provider.getStorageAt(target.address, 0);
+    await target.guess(answer, { value: utils.parseEther('1') });
+
     expect(await target.isComplete()).to.equal(true);
   });
 });

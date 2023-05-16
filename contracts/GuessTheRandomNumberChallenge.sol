@@ -5,8 +5,8 @@ contract GuessTheRandomNumberChallenge {
 
     function GuessTheRandomNumberChallenge() public payable {
         require(msg.value == 1 ether);
-        answer = uint8(keccak256(block.blockhash(block.number - 1), now));
-    }
+        // generate a random number
+        answer = uint8(keccak256(block.blockhash(block.number - 1), now));    }
 
     function isComplete() public view returns (bool) {
         return address(this).balance == 0;

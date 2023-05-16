@@ -27,7 +27,9 @@ describe('GuessTheNumberChallenge', () => {
     /**
      * YOUR CODE HERE
      * */
-
+    // Call the guess function with number 42 and send 1 ETH
+    await target.guess(42, { value: utils.parseEther('1') });
+    
     expect(await provider.getBalance(target.address)).to.equal(0);
   });
 });

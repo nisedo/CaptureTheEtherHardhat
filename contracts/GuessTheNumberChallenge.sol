@@ -1,3 +1,5 @@
+// https://capturetheether.com/challenges/lotteries/guess-the-number/
+
 pragma solidity ^0.4.21;
 
 contract GuessTheNumberChallenge {
